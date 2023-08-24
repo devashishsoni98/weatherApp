@@ -155,4 +155,8 @@
     /* top: 10%;
     left: 10%; */
   }
+  .wetherResultBox{
+    width: 95%;
+    margin: 3% 2%
+  }
 }
