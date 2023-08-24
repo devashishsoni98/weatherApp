@@ -1,0 +1,73 @@
+
+  .dark-theme {
+    background: url("https://cdn.pixabay.com/photo/2014/07/05/08/58/clouds-384672_1280.jpg");
+  }
+  
+  .dark-theme .wetherBg {
+    background-color: #2c3e50;
+    background: url("https://cdn.pixabay.com/photo/2016/11/22/21/31/dark-1850638_1280.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .dark-theme .heading {
+    text-shadow: 4px 4px #2F4858;
+    color: #ecf0f1;
+  }
+
+  .dark-theme .wetherResultBox{
+    background-color: #292c35;
+    box-shadow: 2px 2px 6px #13293D;
+  }
+
+
+  .weathorTemp {
+    color: #e8f1f2;
+    text-shadow: 1px 1px 3px  #97a194;
+  }
+
+  .dark-theme .button {
+    background-color: #292c35;
+    color: #E8F1F2;
+    box-shadow: 2px 2px 6px #13293D;
+  }
+
+  .dark-theme .button:hover {
+    background-color: #3c404b;
+  }
+
+  .dark-theme .button-s{
+    background-color: #292c35;
+    color: #E8F1F2;
+    box-shadow: 0px 0px 6px #E8F1F2;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 3rem;
+    width: 4%;
+    position: absolute;
+    right: 6%;
+    top: 5%;
+  }
+  .dark-theme .button-s:hover{
+    background-color: #3c404b;
+  }
+
+  .dark-theme .wetherResultBox:hover{
+    background-color: #3c404b;
+  }
+
+
+
+  @media (max-width: 768px) {
+  .dark-theme .button-s {
+    width: 10%; /* Increase width for smaller screens */
+    padding: 0.3rem; /* Adjust padding */
+    right: 15%; /* Center the button */
+    transform: translateX(50%); /* Centering transformation */
+    top: 3%; /* Adjust vertical position */
+}
+  }
