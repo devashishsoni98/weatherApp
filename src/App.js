@@ -9,7 +9,6 @@ import "./darkTheme.css";
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const apiKey = process.env.REACT_APP_WEATHER_API;
-  console.log(apiKey);
   const [inputCity, setInputCity] = useState("");
   const [data, setData] = useState({});
 
@@ -23,7 +22,7 @@ function App() {
     axios
       .get(apiURL)
       .then((res) => {
-        console.log("response", res.data);
+        // console.log("response", res.data);
         setData(res.data);
       })
       .catch((err) => {
