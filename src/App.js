@@ -8,7 +8,8 @@ import "./darkTheme.css";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const apiKey = "cc794c3f85102a88f7c8dbd5b06f620e";
+  const apiKey = process.env.REACT_APP_WEATHER_API;
+  console.log(apiKey);
   const [inputCity, setInputCity] = useState("");
   const [data, setData] = useState({});
 
