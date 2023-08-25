@@ -39,6 +39,11 @@
   height: 6rem;
   padding: 0;
   border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+.weathorIcon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .weathorCity {
   font-size: 3rem;
@@ -70,6 +75,7 @@
   color: #d0e1d4;
   font-family: "Josefin Sans", sans-serif;
   text-shadow: 2px 2px #71697a;
+  cursor: pointer;
 }
 
 .button-s {
@@ -118,7 +124,6 @@
   .wetherResultBox {
     width: 80%;
   }
-  
 
   .heading {
     color: #d0e1d4;
@@ -152,11 +157,10 @@
   }
   .logo {
     font-size: 1.5rem;
-    /* top: 10%;
-    left: 10%; */
   }
-  .wetherResultBox{
+
+  .wetherResultBox {
     width: 95%;
-    margin: 3% 2%
+    margin: 3% 2%;
   }
 }

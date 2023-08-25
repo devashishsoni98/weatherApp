@@ -8,7 +8,6 @@ import "./darkTheme.css";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-
   const apiKey = "cc794c3f85102a88f7c8dbd5b06f620e";
   const [inputCity, setInputCity] = useState("");
   const [data, setData] = useState({});
@@ -50,12 +49,12 @@ function App() {
   return (
     <div className={`col-md-12 divv ${isDarkTheme ? "dark-theme" : ""}`}>
       <div className="wetherBg">
-      <button className="btn button-s" type="button" onClick={toggleTheme}>
-      {isDarkTheme ?  <RiMoonClearLine /> : <RiSunLine />}
-          </button>
+        <button className="btn button-s" type="button" onClick={toggleTheme}>
+          {isDarkTheme ? <RiMoonClearLine /> : <RiSunLine />}
+        </button>
         <h1 className="heading">Check Weather Now!</h1>
 
-        <div className="logo">DS</div> 
+        <div className="logo">DS</div>
 
         <div className="d-grid gap-3 col-4 mt-4">
           <input
@@ -68,7 +67,6 @@ function App() {
           <button className="btn button" type="button" onClick={handleSearch}>
             Search
           </button>
-          
         </div>
         {Object.keys(data).length > 0 && (
           <div className="col-md-12 text-center mt-5">
@@ -89,7 +87,6 @@ function App() {
               </h6>
               <h6 className="weathorTemp">
                 Weather <BiSolidRightArrowAlt className="icon" />{" "}
-                {/* {data?.main?.humidity}% */}
                 {data?.weather?.[0]?.main}
               </h6>
               <h6 className="weathorTemp">
